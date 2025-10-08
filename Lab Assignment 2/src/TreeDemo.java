@@ -53,38 +53,8 @@
     in-order traversal
     */
     public void inOrderTraversal(Node root){
-    // base case
-    if (root == null) {
-        System.out.println("Empty root");
-    }
-
-    StringBuilder output = new StringBuilder();
-    Stack<Node> stack = new Stack<>();
-    ArrayList<Integer> orderList = new ArrayList<>();
-
-    for (Node node = root;;)
-    {
-        if (node == null)
-        {
-            if (stack.empty()) break;
-
-            node = stack.pop();
-            node = node.right;
-        }
-        else
-        {
-            orderList.add(node.value);
-            stack.push(node);
-            node = node.left;
-        }
-    }
-
-    for (int i = 0; i < orderList.size()-1; i++)
-    {
-        output.append(orderList.get(i) + "-");
-    }
-    output.append(orderList.getLast());
-    System.out.println(output);
+        Stack<Node> stack = new Stack<>();
+        
     }
 
 
