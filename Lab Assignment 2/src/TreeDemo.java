@@ -44,7 +44,15 @@
     pre-order traversal
     */
     public void preOrderTraversal(Node root){
+        if (root == null) {
+            System.out.println("EMPTY ROOT");
+        }
 
+        if (root != null) {
+            System.out.print(root.value + "-");
+            preOrderTraversal(root.left);
+            preOrderTraversal(root.right);
+        }
     }
 
 
@@ -53,6 +61,10 @@
     in-order traversal
     */
     public void inOrderTraversal(Node root){
+        if (root == null) {
+            System.out.println("EMPTY ROOT");
+        }
+
         if (root != null) {
             inOrderTraversal(root.left);
             System.out.print(root.value + "-");
@@ -66,6 +78,10 @@
     post-order traversal
     */
     public void postOrderTraversal(Node root){
+        if (root == null) {
+            System.out.println("EMPTY ROOT");
+        }
+
         if (root != null) {
             postOrderTraversal(root.left);
             postOrderTraversal(root.right);
