@@ -1,0 +1,35 @@
+[33mcommit 2fe07f003047c263659331cd94b356906078cef5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Tony <ttri@cwu.edu>
+Date:   Wed Oct 8 00:40:34 2025 -0700
+
+    Implemented postOrderTraversal
+
+[33mcommit dce703d31e6d9da16ce3250b40c741152df98444[m
+Author: Tony <ttri@cwu.edu>
+Date:   Wed Oct 8 00:25:17 2025 -0700
+
+    Implemented inOrderTraversal
+
+[33mcommit 6371dc8d5771b8dc5c09c1fce5f388a55b6a7e38[m
+Author: Tony <ttri@cwu.edu>
+Date:   Tue Oct 7 20:14:20 2025 -0700
+
+    4th commit: Deleted Lecture 6.txt
+
+[33mcommit ad8f90d5706eb5928348218f605e9638fe320dfd[m[33m ([m[1;32mfeature_1[m[33m)[m
+Author: Tony <ttri@cwu.edu>
+Date:   Tue Oct 7 20:09:38 2025 -0700
+
+    3rd commit: typed hello in Lecture_6.txt
+
+[33mcommit eb124a8068c5beebdff2dab36366365474204382[m
+Author: Tony <ttri@cwu.edu>
+Date:   Tue Oct 7 20:08:48 2025 -0700
+
+    2nd commit: Lecture_6.txt
+
+[33mcommit 36c4fa1f486f3ae2cec3e8ab20f180b0442009f0[m
+Author: Tony <ttri@cwu.edu>
+Date:   Tue Oct 7 20:06:27 2025 -0700
+
+    1st commit
