@@ -1,0 +1,3 @@
+Belief: If the project is behind schedule, add more developers to catch up
+
+This is false because having new developers means time has to be spent on explaining the problems, solutions, and standards. However, in some cases add more developers can be helpful. For example, the team need a new perspective on a problem or a different look at the solution. I believe generally add more developers do not help the project to be on schedule. 
