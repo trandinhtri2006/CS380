@@ -98,8 +98,15 @@
     with the smallest key
     */
     public int getMin(Node root){
-    //implement me
-    return 0;
+        if (root == null) {
+            System.out.println("EMPTY ROOT");
+        }
+        
+        if (root.left == null) {
+            return root.value;
+        }
+
+        return getMin(root.left);
     }
 
 
@@ -178,6 +185,7 @@
             t1.insert(9);
             t1.insert(90);
             t1.insert(22);
+            t1.insert();
 
             System.out.print("in-order :   ");
             t1.inOrderTraversal(t1.root);
@@ -190,7 +198,8 @@
             System.out.print("find 22 :   ");
             System.out.println(t1.find(t1.root, 22));
 
-            
+            System.out.print("getMin :    ");
+            System.out.println(t1.getMin(t1.root));
             System.out.println();
         }
     }
