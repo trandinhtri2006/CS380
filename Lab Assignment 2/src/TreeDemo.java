@@ -44,7 +44,7 @@
     pre-order traversal
     */
     public void preOrderTraversal(Node root){
-    //implement me
+
     }
 
 
@@ -53,8 +53,11 @@
     in-order traversal
     */
     public void inOrderTraversal(Node root){
-        Stack<Node> stack = new Stack<>();
-        
+        if (root != null) {
+            inOrderTraversal(root.left);
+            System.out.print(root.value + "-");
+            inOrderTraversal(root.right);
+        }
     }
 
 
@@ -63,62 +66,11 @@
     post-order traversal
     */
     public void postOrderTraversal(Node root){
-    if (root == null) {
-        System.out.println("EMPTY ROOT");
-    }
-
-    Stack<Node> stack = new Stack<Node>();
-    Stack<Integer> stackCtr = new Stack<Integer>();
-    ArrayList<Integer> orderList = new ArrayList<Integer>();
-
-    stack.push(root);
-    stackCtr.push(0);
-
-    while (!stack.empty())
-    {
-        int ctr = stackCtr.pop();
-        Node node = stack.peek();
-
-        if (ctr == 0)
-        {
-            // First visit.
-            stackCtr.push(1);
-
-            if (node.left != null)
-            {
-                stack.push(node.left);
-                stackCtr.push(0);
-            }
+        if (root != null) {
+            postOrderTraversal(root.left);
+            postOrderTraversal(root.right);
+            System.out.print(root.value + "-");
         }
-        else if (ctr == 1)
-        {
-            // Second visit.
-            // Left subtree done.
-            stackCtr.push(2);
-
-            if (node.right != null)
-            {
-                stack.push(node.right);
-                stackCtr.push(0);
-            }
-        }
-        else // ctr >= 2
-        {
-            // Third visit.
-            // Right subtree done.
-            stack.pop();
-            orderList.add(node.value);
-        }
-    }
-
-    StringBuilder output =  new StringBuilder();
-    for (int i = 0; i < orderList.size()-1; i++)
-    {
-        output.append(orderList.get(i) + "-");
-    }
-    output.append(orderList.getLast());
-
-    System.out.println(output);
     }
 
 
@@ -222,8 +174,12 @@
 
             System.out.print("in-order :   ");
             t1.inOrderTraversal(t1.root);
+            System.out.println();
+
             System.out.print("post-order :    ");
             t1.postOrderTraversal(t1.root);
+            System.out.println();
+
             System.out.println();
         }
     }
