@@ -80,8 +80,15 @@
     with a specific value
     */
     public boolean find(Node root, int key){
-    //implement me
-    return false;
+        if (root == null) {
+            return false;
+        }
+
+        if (root.value == key) {
+            return true;
+        }
+
+        return find(root.left, key) || find(root.right, key);
     }
 
 
@@ -180,6 +187,10 @@
             t1.postOrderTraversal(t1.root);
             System.out.println();
 
+            System.out.print("find 22 :   ");
+            System.out.println(t1.find(t1.root, 22));
+
+            
             System.out.println();
         }
     }
