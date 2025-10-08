@@ -101,7 +101,7 @@
         if (root == null) {
             System.out.println("EMPTY ROOT");
         }
-        
+
         if (root.left == null) {
             return root.value;
         }
@@ -116,8 +116,15 @@
     with a largest key
     */
     public int getMax(Node root){
-    //implement me
-    return 0;
+        if (root == null) {
+            System.out.println("EMPTY ROOT");
+        }
+
+        if (root.right == null) {
+            return root.value;
+        }
+
+        return getMax(root.right);
     }
 
 
@@ -185,7 +192,7 @@
             t1.insert(9);
             t1.insert(90);
             t1.insert(22);
-            t1.insert();
+            t1.insert(0);
 
             System.out.print("in-order :   ");
             t1.inOrderTraversal(t1.root);
@@ -200,6 +207,9 @@
 
             System.out.print("getMin :    ");
             System.out.println(t1.getMin(t1.root));
+
+            System.out.print("getMax :    ");
+            System.out.println(t1.getMax(t1.root));
             System.out.println();
         }
     }
