@@ -1,0 +1,3 @@
+The disadvantages of XP programming are relatively high cost and time for meetings. High cost because pair programming means the company has to pay double salary and time for meetings will cause trouble because everyone has their own life. 
+
+The disadvantages of Kanban are project schedule management and discipline to update. Kanban are great because of its simplicity but it lacks time frames and schedule details. In order for Kanban to work optimally, the member need discipline to keep their board up-to-date.
