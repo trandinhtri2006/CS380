@@ -3,16 +3,10 @@ public class DVDs {
     private int year;
     private int callNum;
 
+    /* ===== Constructor ===== */
     public DVDs(String title, int year, int callNum) {
         this.title = title;
         this.year = year;
-        this.callNum = callNum;
-
-    }
-
-    public DVDs (int callNum) {
-        this.title = "N/A";
-        this.year = -1;
         this.callNum = callNum;
 
     }

@@ -5,21 +5,13 @@ public class Books {
     private int ISBN;
     private int callNum;
 
-
+    /* ===== Constructor ===== */
     public Books(String title, String author, int publicYrs, int ISBN, int callNum) {
         this.title = title;
         this.author = author;
         this.publicYrs = publicYrs;
         this.ISBN = ISBN;
         this.callNum = callNum;
-    }
-
-    public Books(int ISBN) {
-        this.title = "N/A";
-        this.author = "N/A";
-        this.publicYrs = -1;
-        this.ISBN = ISBN;
-        this.callNum = -1;
     }
 
     /* ===== Getter ===== */
