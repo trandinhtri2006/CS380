@@ -1,58 +1,20 @@
-public class Books {
-    private String title;
-    private String author;
-    private int publicYrs;
-    private int ISBN;
-    private int callNum;
+import java.util.*;
 
-    /* ===== Constructor ===== */
-    public Books(String title, String author, int publicYrs, int ISBN, int callNum) {
-        this.title = title;
-        this.author = author;
-        this.publicYrs = publicYrs;
-        this.ISBN = ISBN;
-        this.callNum = callNum;
+public class Books extends LibraryItem{
+    private List<String> authors;
+    private String isbn;
+
+    public Books(String title, List<String> authors, int year, String isbn, String callNumber, String location) {
+        super(title, year, callNumber, location);
+        this.authors = authors;
+        this.isbn = isbn;
     }
 
-    /* ===== Getter ===== */
-    public String getTitle() {
-        return title;
+    public List<String> getAuthors() {
+        return authors;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public int getPublicYrs() {
-        return publicYrs;
-    }
-
-    public int getISBN() {
-        return ISBN;
-    }
-
-    public int getCallNum() {
-        return callNum;
-    }
-
-    /* ===== Setter ===== */
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public void setPublicYrs(int publicYrs) {
-        this.publicYrs = publicYrs;
-    }
-
-    public void setCallNum(int callNum) {
-        this.callNum = callNum;
-    }
-
-    public void setISBN(int ISBN) {
-        this.ISBN = ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 }
