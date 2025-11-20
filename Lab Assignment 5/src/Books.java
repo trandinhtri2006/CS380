@@ -14,7 +14,7 @@ public class Books extends LibraryItem{
         return authors;
     }
 
-    public String getIsbn() {
+    public String getISBN() {
         return isbn;
     }
 }
